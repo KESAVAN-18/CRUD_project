@@ -7,15 +7,14 @@ import Header from './Header';
 import apiRequest from './apiRequest';
 import ColorChange from './ColorChange';
 
-
 function App() {
   const [input,setinput] = useState([])
-  const [additem,setAdditem] = useState('')
-  const[changing,setchanging] = useState('')
+  const [additem,setAdditem] = useState([])
+  const[changing,setchanging] = useState([])
 
    //fetch item from outer made by me
 
-  const API_URL = " http://localhost:8080/items"
+  const API_URL = " http://localhost:3600/items"
     const  [isLoading,setIsloading] = useState(true)
     const [fetchError , setFetchError] = useState(null)
 
@@ -121,7 +120,7 @@ function App() {
 
 const handleSubmiting = (e)=>{
      e.preventDefault()
-     setchanging('')
+     
    }
 
   return (

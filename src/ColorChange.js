@@ -26,15 +26,15 @@ const ColorChange = ({returnFocus,handleSubmiting,changing,setchanging}) => {
                       <option value="Green">Green</option>
                       <option value = "black">black</option>
              </select>
-      </section>
-   <form onSubmit={handleSubmiting}>
-         <button 
-              className="send"
-              role="submit"
-              onClick={()=>returnFocus.current.focus()} 
-         >submit</button>
-     
-        </form>
+      
+       
+              <button 
+                    onSubmit={()=>returnFocus.current.focus()}
+                    className="send"
+                    role="submit"
+                    onClick={()=>returnFocus.current.focus()} 
+              >submit</button>    
+          </section>
     </div>
   )
 }
