@@ -3,9 +3,8 @@ import React from 'react'
 const ColorChange = ({returnFocus,handleSubmiting,changing,setchanging}) => {
   return (
     <div className='colorchanges'>
-       <form onSubmit={handleSubmiting}>
-          <section>
-              <select 
+      <section>
+          <select 
                   className='optionTag'
                   value={changing}
                   onChange={(e)=>{setchanging(e.target.value)}}>      
@@ -28,8 +27,7 @@ const ColorChange = ({returnFocus,handleSubmiting,changing,setchanging}) => {
                       <option value = "black">black</option>
              </select>
       </section>
-
-       
+   <form onSubmit={handleSubmiting}>
          <button 
               className="send"
               role="submit"

@@ -14,7 +14,7 @@ const Content = ({input,handleChange,handleDelete,changing}) => {
                           />
                              <label onClick={()=>handleChange(item.id)} 
                                     className="inputText"> 
-                                 {item.productName}</label>
+                                   {item.productName}</label>
                          
                           <button 
                               role='button'
