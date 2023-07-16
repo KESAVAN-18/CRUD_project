@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "checked": false,
+      "productName": "hjakl"
+    },
+    {
+      "id": 2,
+      "checked": true,
+      "productName": "jkl"
+    },
+    {
+      "id": 3,
+      "checked": true,
+      "productName": "bn"
+    }
+  ]
+}

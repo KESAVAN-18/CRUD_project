@@ -1,19 +1,20 @@
-
-
 const Content = ({input,handleChange,handleDelete}) => {
 
     return (
      
         <>
              {input.length?(
-              <ul>
+              <ul className="ul">
                 {input.map((item)=>{
-                  return  <li key={item.id} className="list ">
-                      <label> <input type="checkbox" 
-                                 checked =  {item.checked}
-                                 onChange={()=>handleChange(item.id)}                         
+                  return  <li key={item.id}  className="list">
+                             <input type="checkbox" 
+                                    checked =  {item.checked}
+                                    className="checkbox"
+                                    onChange={()=>handleChange(item.id)}                         
                           />
-                              {item.productName}</label>
+                             <label onClick={()=>handleChange(item.id)} 
+                                    className="inputText"> 
+                                 {item.productName}</label>
                           <button 
                           
                           role='button'
