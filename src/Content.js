@@ -15,14 +15,15 @@ const Content = ({input,handleChange,handleDelete}) => {
                              <label onClick={()=>handleChange(item.id)} 
                                     className="inputText"> 
                                  {item.productName}</label>
+                         
                           <button 
-                          
                           role='button'
                           onClick={()=>handleDelete(item.id)}
+                          className="button"
                           >🅾</button>
                     </li>
                 })}
-              </ul> ): <p style={{fontFamily:"monospace",opacity :"50%"}}>your list are empty</p> }
+              </ul> ): <p style={{fontFamily:"monospace",opacity :"50%",textAlign:"center",padding :"50px" }}>your list are empty</p> }
         </>
    
     )

@@ -1,49 +1,9 @@
 {
   "items": [
     {
-      "id": 1,
-      "checked": true,
-      "productName": "hjakl"
-    },
-    {
-      "id": 2,
-      "checked": true,
-      "productName": "jkl"
-    },
-    {
-      "id": 3,
-      "checked": true,
-      "productName": "bn"
-    },
-    {
-      "id": 4,
-      "checked": false,
-      "productName": "hjkl'"
-    },
-    {
-      "id": 5,
-      "checked": false,
-      "productName": "fghjkl'"
-    },
-    {
       "id": 6,
       "checked": false,
-      "productName": "sdfghjdfhjdfghjkl"
-    },
-    {
-      "id": 7,
-      "checked": false,
-      "productName": "dfghjkxchjkfghjkdfghjkfghjkl"
-    },
-    {
-      "id": 8,
-      "checked": false,
-      "productName": "fhjk"
-    },
-    {
-      "id": 9,
-      "checked": false,
-      "productName": "hjkl'"
+      "productName": "gtge"
     }
   ]
 }
