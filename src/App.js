@@ -5,15 +5,16 @@ import Footer from './Footer';
 import { useEffect, useRef, useState } from 'react';
 import Header from './Header';
 import apiRequest from './apiRequest';
+import ColorChange from './ColorChange';
 
 
 function App() {
   const [input,setinput] = useState([])
   const [additem,setAdditem] = useState('')
-
+  const[changing,setchanging]= useState('')
    //fetch item from outer made by me
 
-  const API_URL = "http://localhost:3400/items"
+  const API_URL = "http://localhost:3500/items"
     const  [isLoading,setIsloading] = useState(true)
     const [fetchError , setFetchError] = useState(null)
 
@@ -54,7 +55,7 @@ function App() {
     const updateItem = {
             method : 'PATCH',
             headers : {
-            "content-type":'application/json'
+               "content-type":'application/json'
             },
             body : JSON.stringify({checked : addMyDb[0].checked})
           }
@@ -116,6 +117,13 @@ function App() {
 
  const returnFocus = useRef()
 
+     // onsubmit code for color changing
+
+const handleSubmiting = (e)=>{
+     e.preventDefault()
+     setchanging('')
+   }
+
   return (
         <div>
 
@@ -136,11 +144,19 @@ function App() {
               input = {input}
               handleChange= {handleChange}
               handleDelete={handleDelete}
+              changing = {changing}
           />}
    </main>     
  
        <Footer 
-            length={input.length}
+          length={input.length}
+       />
+       
+       <ColorChange
+          changing = {changing}
+          setchanging = {setchanging}
+          returnFocus= {returnFocus}
+          handleSubmiting={handleSubmiting}
        />
         
         </div>
