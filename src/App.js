@@ -6,13 +6,14 @@ import { useEffect, useRef, useState } from 'react';
 import Header from './Header';
 import apiRequest from './apiRequest';
 
+
 function App() {
   const [input,setinput] = useState([])
   const [additem,setAdditem] = useState('')
 
    //fetch item from outer made by me
 
-  const API_URL = "http://localhost:3500/items"
+  const API_URL = "http://localhost:3400/items"
     const  [isLoading,setIsloading] = useState(true)
     const [fetchError , setFetchError] = useState(null)
 
@@ -128,9 +129,9 @@ function App() {
              
           /> 
 
-   <main className='inputbox'>
-      {isLoading &&  <p> loading items...</p> }
-      {fetchError && <p>{`ERROR : ${fetchError}`}</p> }
+   <main>
+      {isLoading && <i><p  className='loading'> loading items...</p></i> }
+      {fetchError && <i><p  className='loading'>{`ERROR : ${fetchError}`}</p></i> }
          { !fetchError && !isLoading &&<Content  
               input = {input}
               handleChange= {handleChange}
