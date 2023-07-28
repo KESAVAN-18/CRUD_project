@@ -14,7 +14,7 @@ function App() {
 
    //fetch item from outer made by me
 
-  const API_URL = "http://localhost:3500/items"
+  const API_URL = "http://localhost:3500/items  "
     const [isLoading,setIsloading] = useState(true)
     const [fetchError , setFetchError] = useState(null)
 
