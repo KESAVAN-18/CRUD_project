@@ -6,13 +6,13 @@ const Content = ({input,handleChange,handleDelete,changing}) => {
      
         <>
              {input.length?(
-            <ul className="ul" style={{boxShadow:`1px 1px 100px ${changing}` }}>
+            <ul className="ul" style={{boxShadow:`1px 1px 100px ${changing}`}}>
                 {input.map((item)=>{
                   return  <li key={item.id} 
                               className="list" 
                               style={{boxShadow:`inset 1px 1px 40px ${changing}`}}>
 
-                             <input type="checkbox" 
+                            <input  type="checkbox" 
                                     checked =  {item.checked}
                                     className="checkbox"
                                     onChange={()=>handleChange(item.id)}                         
